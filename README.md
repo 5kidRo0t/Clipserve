@@ -1,37 +1,46 @@
-# 🛡️ Clipserve - Improved Clipboard Security 🔐
+# 🔐 Clipserve – Now with Encrypted Clipboard History! ✨
 
 ---
 
-<div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRwYm1wNnltb21hZm5ncHExN240dHQ1cGozM2NxcnVoOW8zeDNoZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZTUfoXigKRpCM/giphy.gif" alt="Clipboard Security" />
-</div>
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRwYm1wNnltb21hZm5ncHExN240dHQ1cGozM2NxcnVoOW8zeDNoZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZTUfoXigKRpCM/giphy.gif" alt="Clipboard Security" width="300" />
+</p>
 
 ---
 
-## 🚀 What’s New?
+## 🚀 What Changed?
 
-This update significantly **enhances the security** of your clipboard history by generating a **new encryption key every time the script starts**. 🔑✨
+This version of `Clipserve` adds a **critical security enhancement** missing from the original script:
 
-Instead of relying on a **fixed, hardcoded key**, the encryption key is now created **dynamically per session**, ensuring that:
+> ✅ **Clipboard history is now encrypted using Fernet with a unique key generated at every run.**
 
-- 🔒 Clipboard contents are protected with a fresh key on each run.  
-- 🔑 Risks related to key exposure are greatly mitigated.  
-- 🛡️ Overall confidentiality of stored clipboard data is improved.
+This means:
 
----
-
-## 🎯 Why This Matters
-
-Storing sensitive clipboard data demands strong security measures. With this dynamic session-based key:
-
-- Your clipboard history is safer against unauthorized access.  
-- Every session is uniquely encrypted, preventing replay or key reuse attacks.  
-- Peace of mind that your data isn’t encrypted with stale or exposed keys.
+- 🔒 Clipboard entries are no longer stored in plaintext.
+- 🔑 Each session uses a fresh, random encryption key.
+- 🧹 No hardcoded keys – nothing sensitive is embedded in the source code.
+- 🛡️ Encrypted data is decrypted only in-memory for display in the frontend.
 
 ---
 
-Feel free to try it out and enhance your clipboard security today! 🚀
+## 🧠 Why This Matters
+
+The original implementation stored all clipboard contents **in plaintext**, exposing sensitive copied data to **anyone accessing the server or memory**.
+
+With this improvement:
+- Session confidentiality is preserved.  
+- The attack surface is reduced.  
+- You're one step closer to clipboard privacy done right.
 
 ---
 
-*Made with 💻 and ☕ by [5kidRo0t]*  
+## ✍️ Author Note
+
+This is a fork of the original `Clipserve` project.  
+I made this change to demonstrate a **secure approach to clipboard history tracking**.
+
+Feel free to test it, contribute, or contact me with suggestions! 🙌
+
+---
+
+*Made with 💻 and 🧠 by [5kidRo0t]*
