@@ -106,7 +106,7 @@ def watch_clipboard():
 
 # Main execution
 if __name__ == "__main__":
-    print("[+] Clave de sesión generada (no persistente). Todo el historial se perderá al cerrar.")
+    print("[+] Session key generated (non-persistent). All history will be lost upon closing.")
     threading.Thread(target=watch_clipboard, daemon=True).start()
     app.run(host="0.0.0.0", port=6969)
 
