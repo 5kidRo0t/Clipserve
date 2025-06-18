@@ -10,7 +10,7 @@
 
 ## 🚀 What Changed?
 
-This version of [Clipserve]("https://github.com/SAPH1TE/Clipserve") adds a **critical security enhancement** missing from the original script:
+This version of [Clipserve](https://github.com/SAPH1TE/Clipserve) adds a **critical security enhancement** missing from the original script:
 
 > ✅ **Clipboard history is now encrypted using Fernet with a unique key generated at every run.**
 
@@ -36,7 +36,7 @@ With this improvement:
 
 ## ✍️ Author Note
 
-This is a fork of the original [Clipserve]("https://github.com/SAPH1TE/Clipserve") project.  
+This is a fork of the original [Clipserve](https://github.com/SAPH1TE/Clipserve) project.  
 I made this change to demonstrate a **secure approach to clipboard history tracking**.
 
 Feel free to test it, contribute, or contact me with suggestions! 🙌
